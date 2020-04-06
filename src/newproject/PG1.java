@@ -15,7 +15,7 @@ public class PG1 {
 	    if (actualTitle.contentEquals(expectedTitle)){
 	            System.out.println("Test Passed!");
 	       } else {
-	            System.out.println("Test Failed");
+	            System.out.println("Test has Failed");
 	       } 
 	    driver.close();
 		
