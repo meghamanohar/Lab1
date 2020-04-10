@@ -10,9 +10,15 @@ public class PG2 {
 		WebDriver driver = new ChromeDriver();
 		String baseURL = "https://www.facebook.com";
 		String tagName = "";
+		String titleName = "";
+		String pageSource = "";
 		driver.get(baseURL);
 		tagName = driver.findElement(By.id("email")).getTagName();
-		System.out.println(tagName);
+		titleName = driver.getTitle();
+		pageSource = driver.getPageSource();
+		System.out.println("TitleName is " + titleName);
+		System.out.println("TagName is "+ tagName);
+		System.out.println("Page source is " + pageSource);
 		driver.close();
 		System.exit(0);
 		
